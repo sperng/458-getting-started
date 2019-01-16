@@ -17,16 +17,68 @@ This is the mass-energy equivalence equation discovered by Einstein.
 
 First Header  | Second Header
 ------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+Content 1     | Content 4
+Content 2     | Content 5
+Content 3     | Content 6
+https://examplereferencelink.com 
+
+```{r}
+
+#Task 6
+100/10+2
+100/(10+2)
+
+50*5 - 9
+sqrt(9) + 53 / 5
+78.33^4 - 2
+
+#Task 7
+x = 8*3
+x+10
+
+y <- x^2
+z <- sqrt(y+49)
+a <- y + z
+
+#Task 8
+ab <- seq(1,30)
+
+stringStore <- c("foo", "bar", "baz")
+
+length(ab)
+length(stringStore)
+
+sum(ab)
+sum(stringStore)
+
+#Task 9
+five <- seq(1,5)
+ten <- seq(6,10)
+
+five + ten
+
+fifty <- five * ten
+
+#Task 10
+fiveTen <- c(five,ten)
+combinedVec <- rbind(five, ten, fiveTen)
+
+df <- data.frame("five" = five, "ten" = ten, "fiveTen" = fiveTen)
+
+```
 
 ```{r, echo=FALSE, warning=FALSE}
-#library(tidyverse)
-#object1=read.csv("China_EO_49to17.csv")
+library(tidyverse)
+object1=read.csv("China_EO_49to17.csv")
 
-#object2=as_tibble(object1)
+object2=as_tibble(object1)
 
+arrange(object2, desc(Year))
 
+object2
 
+mutated <- mutate(object2, Output_Ratio = Beijing_Output/Shanghai_Output)
+
+mutated
 ```
 
